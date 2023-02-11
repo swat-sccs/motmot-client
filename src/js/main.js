@@ -14,7 +14,6 @@ initBootstrap({
 // Your app code
 console.log(`Hello ${process.env.HELLO}`);
 let title = document.getElementById("sccsheader")
-let i = 0
 
 var intervalID = window.setInterval(() => {
   axios.get('https://ipinfo.io/ip')
