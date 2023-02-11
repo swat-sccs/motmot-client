@@ -18,7 +18,8 @@ let title = document.getElementById("sccsheader")
 let i = 0
 
 var intervalID = window.setInterval(() => {
-  title.textContent = `Swarthmore College ${word[i]} Society`
+  let uppercaseWord = word[i][0].toUpperCase() + word[i].slice(1);
+  title.innerHTML = `Swarthmore College <span class="sccs-accent-color">${uppercaseWord}</span> Society`
   i++
   if (i==word.length) {
     i=0
